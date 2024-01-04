@@ -1,6 +1,6 @@
 # Active Directory - Certificate Services
 
-* Find ADCS Server
+* Find ADCS Server-demo
   * `crackmapexec ldap domain.lab -u username -p password -M adcs`
   * `ldapsearch -H ldap://dc_IP -x -LLL -D 'CN=<user>,OU=Users,DC=domain,DC=local' -w '<password>' -b "CN=Enrollment Services,CN=Public Key Services,CN=Services,CN=CONFIGURATION,DC=domain,DC=local" dNSHostName`
 * Enumerate AD Enterprise CAs with certutil: `certutil.exe -config - -ping`, `certutil -dump`
